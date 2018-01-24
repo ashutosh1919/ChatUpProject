@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerVertical="true"
+    android:layout_gravity="center">
+
+    <RelativeLayout
+        android:id="@+id/rl1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPink">
+
+        <ImageView
+            android:id="@+id/iv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/add_friend_icon"/>
+
+        <TextView
+            android:layout_toRightOf="@+id/iv1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Contact"
+            android:layout_marginTop="30dp"
+            android:layout_centerVertical="true"
+            fontpath="fonts/Montserrat_Regular.ttf"
+            android:layout_marginLeft="20dp"
+            android:textSize="20dp"
+            android:textColor="@color/colorWhite"/>
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_below="@+id/rl1"
+        android:padding="4dp"
+        android:gravity="center"
+        android:id="@+id/add_from_contact_tv"
+        android:text="Add From Contact"
+        android:background="@drawable/dialog_add_contact_background"
+        fontpath="fonts/GrandHotel-Regular.otf"
+        android:textColor="@color/colorWhite"
+        android:textSize="16dp" />
+
+
+    <RelativeLayout
+        android:layout_below="@+id/add_from_contact_tv"
+        android:id="@+id/rl2"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="wrap_content"
+        android:background="@drawable/dialog_et_border"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp">
+
+        <ImageView
+            android:id="@+id/iv2"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="6dp"
+            android:src="@drawable/name_logo"
+            android:layout_centerVertical="true"/>
+
+        <EditText
+            android:id="@+id/name_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/iv2"
+            android:hint="Name"
+            android:background="@android:color/transparent"
+            fontpath="fonts/Montserrat_Regular.ttf"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:textSize="16dp"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_below="@+id/rl2"
+        android:id="@+id/rl3"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="wrap_content"
+        android:background="@drawable/dialog_et_border"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:id="@+id/iv3"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="6dp"
+            android:src="@drawable/phone_logo"
+            android:layout_centerVertical="true"/>
+
+        <EditText
+            android:id="@+id/phone_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/iv3"
+            android:hint="Phone Number"
+            android:inputType="number"
+            android:background="@android:color/transparent"
+            fontpath="fonts/Montserrat_Regular.ttf"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:textSize="16dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_below="@+id/rl3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:id="@+id/cancel_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="CANCEL"
+            fontpath="fonts/Montserrat_Regular.ttf"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:textColor="#9e9e9e"/>
+
+        <TextView
+            android:id="@+id/add_contact_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/cancel_tv"
+            android:layout_marginRight="20dp"
+            android:text="ADD"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:textColor="@color/colorPink"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

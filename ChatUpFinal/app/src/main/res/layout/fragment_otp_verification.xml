@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/otp_parent_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_height="?attr/actionBarSize"
+        android:elevation="5dp"
+        android:background="#1565c0"
+        android:id="@+id/custom_toolbar_fragment">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorWhite"
+            fontPath="fonts/LobsterTwo-Italic.otf"
+            android:text="ChatUp"
+            android:layout_marginRight="15dp"
+            android:id="@+id/toolbar_title"
+            android:textSize="30sp"
+            android:gravity="center"/>
+
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:id="@+id/parent_login"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/custom_toolbar_fragment"
+        android:background="@drawable/background_login">
+
+        <ImageView
+            android:id="@+id/icon_iv"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/sms_icon"/>
+
+
+        <TextView
+            android:layout_below="@id/icon_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:textSize="50dp"
+            android:textColor="#000000"
+            android:id="@+id/tv1"
+            fontpath="fonts/KaushanScript-Regular.otf"
+            android:text="Verify OTP" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="9944440398"
+            android:id="@+id/otp_sent_num"
+            android:layout_below="@+id/tv1"
+            android:textSize="17dp"
+            android:textColor="#000000"
+            fontpath="fonts/KaushanScript-Regular.otf"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"/>
+
+        <RelativeLayout
+            android:id="@+id/rl4"
+            android:layout_below="@+id/otp_sent_num"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_curve"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="20dp">
+
+            <ImageView
+                android:id="@+id/iv4"
+                android:padding="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/otp_icon"/>
+
+            <EditText
+                android:id="@+id/tv_otp"
+                android:layout_toRightOf="@+id/iv4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:inputType="textPassword"
+                android:background="@android:color/transparent"
+                fontpath="fonts/Montserrat_Regular.ttf"
+                android:hint="Enter OTP Here"
+                android:padding="10dp"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl4"
+            android:id="@+id/tv_resend_otp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:textSize="17dp"
+            fontpath="fonts/Montserrat_Regular.ttf"
+            android:text="Resend OTP"
+            android:textColor="#000000"/>
+
+        <Button
+            android:id="@+id/btn_verify_otp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorCommonBlue"
+            android:padding="5dp"
+            android:text="Verify"
+            android:textAllCaps="false"
+            fontpath="fonts/Montserrat_Regular.ttf"
+            android:textSize="20dp"
+            android:textColor="@color/colorWhite"/>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

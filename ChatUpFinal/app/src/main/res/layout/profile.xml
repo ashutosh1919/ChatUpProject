@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="230dp"
+        android:paddingBottom="16dp"
+        android:elevation="2dp">
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="68dp"
+            android:layout_marginBottom="8dp"
+            android:text="Layman and Godfather"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            fontPath="fonts/Montserrat_Regular.ttf"
+            android:textSize="24sp"
+            android:textColor="@android:color/black"
+            android:fontFamily="sans-serif"/>
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/tvName"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_marginBottom="8dp"
+            fontPath="fonts/Montserrat_Regular.ttf"
+            android:gravity="center"
+            android:lines="2"
+            android:text="Intern at FreeCopy"
+            android:textSize="16sp"
+            android:fontFamily="sans-serif-medium"/>
+
+        <TextView
+            android:id="@+id/tvEducation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/tvTitle"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_marginBottom="4dp"
+            fontPath="fonts/Montserrat_Regular.ttf"
+            android:text="IIITDM, Kurnool"
+            android:textSize="16sp"
+            android:fontFamily="sans-serif-light"/>
+
+        <TextView
+            android:id="@+id/tvAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/tvEducation"
+            android:layout_marginBottom="16dp"
+            fontPath="fonts/Montserrat_Regular.ttf"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="South Chennai Area. 600127"
+            android:textSize="16sp"
+            android:fontFamily="sans-serif-light"/>
+
+        <Space
+            android:id="@+id/spaceHolder"
+            android:layout_width="10dp"
+            android:layout_height="0dp"
+            android:layout_below="@id/tvEducation"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:id="@+id/btnMessage"
+            android:layout_width="110dp"
+            android:layout_height="40dp"
+            android:layout_toLeftOf="@id/spaceHolder"
+            android:layout_toStartOf="@id/spaceHolder"
+            android:layout_below="@id/tvAddress"
+            android:layout_marginBottom="16dp"
+            android:paddingStart="10dp"
+            fontPath="fonts/Montserrat_Regular.ttf"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingEnd="10dp"
+            android:background="@drawable/message_button"
+            android:textColor="@color/colorCommonBlue"
+            android:text="message"
+            android:textSize="16sp"
+            android:fontFamily="sans-serif-medium"/>
+
+        <Button
+            android:layout_width="110dp"
+            android:layout_height="40dp"
+            android:layout_toRightOf="@id/spaceHolder"
+            android:layout_toEndOf="@id/spaceHolder"
+            android:layout_below="@id/tvAddress"
+            android:layout_marginBottom="16dp"
+            android:paddingStart="10dp"
+            android:paddingLeft="10dp"
+            fontPath="fonts/Montserrat_Regular.ttf"
+            android:paddingRight="10dp"
+            android:paddingEnd="10dp"
+            android:background="@drawable/connect_button"
+            android:textColor="@android:color/white"
+            android:text="connect"
+            android:textSize="16sp"
+            android:fontFamily="sans-serif-medium"/>
+
+        <TextView
+            android:id="@+id/tvSummary"
+            android:layout_width="310dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/btnMessage"
+            android:gravity="center"
+            fontPath="fonts/Montserrat_Regular.ttf"
+            android:lines="2"
+            android:ellipsize="end"
+            android:text="We are CSE Students and Android Developers"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif-medium"/>
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/photoHeader"
+        layout="@layout/photo_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_anchor="@id/relativeLayout"
+        app:layout_anchorGravity="top|center"/>
+</android.support.design.widget.CoordinatorLayout>

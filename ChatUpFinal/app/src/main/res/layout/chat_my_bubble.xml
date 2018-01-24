@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_check"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:layout_gravity="right">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/constraint_my_parent"
+        android:background="@drawable/chat_sent_background"
+        android:padding="8dp"
+        android:minWidth="50dp"
+        android:orientation="vertical"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp">
+
+        <TextView
+            app:layout_constraintLeft_toLeftOf="@+id/constraint_my_parent"
+            app:layout_constraintTop_toTopOf="@+id/constraint_my_parent"
+            android:id="@+id/sent_message_tv"
+            android:text="h"
+            android:textSize="15dp"
+            android:maxWidth="240dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:textColor="@color/colorWhite" />
+
+        <TextView
+            android:id="@+id/message_time_tv"
+            android:text="11:40"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:textColor="#757575"
+            app:layout_constraintTop_toBottomOf="@+id/sent_message_tv"
+            app:layout_constraintRight_toRightOf="@+id/constraint_my_parent"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginEnd="5dp" />
+
+        <!--<ImageView
+            android:id="@+id/status_iv"
+            android:src="@drawable/single_tick"
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginEnd="5dp" />-->
+
+    </android.support.constraint.ConstraintLayout>
+
+</RelativeLayout>
+

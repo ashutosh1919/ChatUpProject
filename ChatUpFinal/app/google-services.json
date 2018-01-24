@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1046584572680",
+    "firebase_url": "https://chatupfinal.firebaseio.com",
+    "project_id": "chatupfinal",
+    "storage_bucket": "chatupfinal.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1046584572680:android:edbdceeca9d64e7f",
+        "android_client_info": {
+          "package_name": "com.example.ashutosh.chatupfinal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1046584572680-kg08h7tgtfp86sd1svrnp4sooam6uluc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.ashutosh.chatupfinal",
+            "certificate_hash": "bb50080c8468ded8695aca5d66a6af93aa21fed0"
+          }
+        },
+        {
+          "client_id": "1046584572680-vhtm95ebgk5lp8f1b9esosl51a8map33.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBNrQLXivNI_Jvc90IDZH2hVFLH5cAjSHI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1046584572680-vhtm95ebgk5lp8f1b9esosl51a8map33.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

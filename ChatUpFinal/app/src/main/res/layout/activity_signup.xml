@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpActivity">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#1565c0"
+            android:id="@+id/custom_toolbar_login">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorWhite"
+                fontPath="fonts/LobsterTwo-Italic.otf"
+                android:text="ChatUp"
+                android:layout_marginRight="15dp"
+                android:id="@+id/toolbar_title"
+                android:textSize="30sp"
+                android:gravity="center"/>
+
+        </android.support.v7.widget.Toolbar>
+
+        <RelativeLayout
+            android:id="@+id/parent_login"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/custom_toolbar_login"
+            android:background="@drawable/background_login">
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Signup"
+                fontpath="fonts/KaushanScript-Regular.otf"
+                android:textSize="70sp"
+                android:layout_marginTop="15dp"
+                android:gravity="center_horizontal"
+                android:textColor="#000000"/>
+
+            <RelativeLayout
+                android:id="@+id/rl1"
+                android:layout_below="@+id/tv1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border_curve"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="20dp">
+
+                <ImageView
+                    android:id="@+id/iv1"
+                    android:padding="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:src="@drawable/name_logo"/>
+
+                <EditText
+                    android:id="@+id/tv_full_name"
+                    android:layout_toRightOf="@+id/iv1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:inputType="textAutoComplete"
+                    android:background="@android:color/transparent"
+                    fontpath="fonts/Montserrat_Regular.ttf"
+                    android:hint="Full Name"
+                    android:padding="10dp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl2"
+                android:layout_below="@+id/rl1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border_curve"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:id="@+id/iv2"
+                    android:padding="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:src="@drawable/username_logo"/>
+
+                <EditText
+                    android:id="@+id/tv_username"
+                    android:layout_toRightOf="@+id/iv2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:inputType="textAutoComplete"
+                    android:background="@android:color/transparent"
+                    fontpath="fonts/Montserrat_Regular.ttf"
+                    android:hint="Username "
+                    android:padding="10dp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl3"
+                android:layout_below="@+id/rl2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border_curve"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:id="@+id/iv3"
+                    android:padding="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:src="@drawable/phone_logo"/>
+
+                <EditText
+                    android:id="@+id/tv_phone_number"
+                    android:layout_toRightOf="@+id/iv3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:inputType="number"
+                    android:background="@android:color/transparent"
+                    fontpath="fonts/Montserrat_Regular.ttf"
+                    android:hint="Phone Number"
+                    android:padding="10dp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl4"
+                android:layout_below="@+id/rl3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border_curve"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:id="@+id/iv4"
+                    android:padding="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:src="@drawable/password_logo"/>
+
+                <EditText
+                    android:id="@+id/tv_password"
+                    android:layout_toRightOf="@+id/iv4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:inputType="textPassword"
+                    android:background="@android:color/transparent"
+                    fontpath="fonts/Montserrat_Regular.ttf"
+                    android:hint="Password"
+                    android:padding="10dp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl5"
+                android:layout_below="@+id/rl4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border_curve"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:id="@+id/iv5"
+                    android:padding="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:src="@drawable/confirm_password_logo"/>
+
+                <EditText
+                    android:id="@+id/tv_confirm_password"
+                    android:layout_toRightOf="@+id/iv5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:inputType="textPassword"
+                    android:background="@android:color/transparent"
+                    fontpath="fonts/Montserrat_Regular.ttf"
+                    android:hint="Confirm Password"
+                    android:padding="10dp"/>
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btn_signup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@color/colorCommonBlue"
+                android:padding="5dp"
+                android:text="SignUp"
+                android:textAllCaps="false"
+                fontpath="fonts/Montserrat_Regular.ttf"
+                android:textSize="20dp"
+                android:textColor="@color/colorWhite"/>
+
+
+        </RelativeLayout>
+
+
+</RelativeLayout>

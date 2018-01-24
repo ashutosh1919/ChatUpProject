@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_chat_screen"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ChatScreenActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#1565c0"
+            android:id="@+id/chat_activity_toolbar"
+            android:contentInsetLeft="0dp"
+            android:contentInsetStart="0dp"
+            app:contentInsetLeft="0dp"
+            app:contentInsetStart="0dp"
+            android:contentInsetRight="0dp"
+            android:contentInsetEnd="0dp"
+            app:contentInsetRight="0dp"
+            app:contentInsetEnd="0dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/back_btn_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:src="@drawable/chat_back_icon" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_toRightOf="@+id/back_btn_iv"
+                    android:id="@+id/profile_image_civ"
+                    android:layout_centerVertical="true"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:src="@drawable/ashu4"
+                    android:layout_marginLeft="7dp"/>
+
+                <RelativeLayout
+                    android:layout_toRightOf="@+id/profile_image_civ"
+                    android:id="@+id/rl_tool"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp">
+
+                    <TextView
+                        android:id="@+id/name_of_contact_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Godfather"
+                        fontpath="fonts/Montserrat_Regular.ttf"
+                        android:textSize="17dp"
+                        android:textColor="@color/colorWhite" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/name_of_contact_tv"
+                        android:id="@+id/last_seen_tv"
+                        android:text="last seen today at 12:50"
+                        fontpath="fonts/Montserrat_Regular.ttf"
+                        android:textSize="12dp"
+                        android:textColor="@color/colorWhite"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rl_util"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true">
+
+                    <ImageView
+                        android:id="@+id/option_menu_iv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/option_menu_chat_icon"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="3dp"/>
+
+                    <ImageView
+                        android:id="@+id/call_contact_iv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_toLeftOf="@+id/option_menu_iv"
+                        android:src="@drawable/call_icon"
+                        android:layout_centerVertical="true"/>
+
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/chat_activity_toolbar"
+            android:layout_above="@+id/rl_message_area">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <android.support.v7.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/chat_recycler_view">
+
+                </android.support.v7.widget.RecyclerView>
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+
+        <RelativeLayout
+            android:id="@+id/rl_message_area"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/card_subscription"
+            android:layout_marginBottom="2dp">
+
+            <ImageView
+                android:id="@+id/send_file_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/profile_circular_background"
+                android:src="@drawable/add_icon"
+                android:layout_centerVertical="true"
+                android:padding="3dp"
+                android:layout_marginLeft="5dp"/>
+
+            <ImageView
+                android:id="@+id/send_message_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/send_message_background"
+                android:src="@drawable/send_message_icon"
+                android:padding="6dp"
+                android:layout_marginRight="5dp"
+                android:layout_centerVertical="true"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/send_file_iv"
+                android:layout_toLeftOf="@+id/send_message_iv"
+                android:background="@drawable/send_message_edittext_background"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <ImageView
+                    android:id="@+id/imoge_icon_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/imoge_profile_icon"
+                    android:background="@drawable/profile_circular_background"
+                    android:padding="5dp"/>
+
+                <EditText
+                    android:id="@+id/message_box_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@id/imoge_icon_iv"
+                    android:textSize="16dp"
+                    fontpath="fonts/Montserrat_Regular.ttf"
+                    android:layout_centerVertical="true"
+                    android:background="@android:color/transparent"
+                    android:hint="Message..."
+                    android:padding="5dp"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>

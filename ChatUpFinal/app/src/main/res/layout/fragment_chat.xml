@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/no_chat_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No Chats Available"
+        android:visibility="gone"
+        android:textStyle="bold"
+        android:layout_centerInParent="true"
+        fontpath="fonts/Montserrat_Regular.ttf" />
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/chat_list_rv"
+        android:visibility="visible">
+
+
+    </android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>
